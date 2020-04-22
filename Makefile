@@ -20,3 +20,6 @@ test:
 	ssserver -p 21344 -k password -m aes-256-cfb -d stop
 	@echo "Test success"
 
+deploy:
+	@echo "Experimental: Deploying to packaging server"
+	./deploy.sh ssl-symbol.patch
